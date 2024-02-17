@@ -1,0 +1,515 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    background-color: #1D2F30;
+    background-size: cover;
+}
+
+*,
+**,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    
+
+}
+
+
+
+/*  Page
+===============================*/
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+
+
+/*  Header
+===============================*/
+.header {
+    width: 100%;
+    height: 60px;
+
+}
+.header-inner {
+    display: flex;
+}
+
+.logo{
+
+    margin: 20px 0px 20px 15px;
+}
+
+.header-menu {
+    width: 534px;
+    height: auto;
+    margin: 18px 296px 18px 125px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-nav-link {
+    color: white;
+}
+
+.search {
+    padding: 18px 64px 18px 0px;
+}
+
+.log-in {
+    padding: 18px 15px 18px 0px;
+}
+
+
+
+/*  Hero
+===============================*/
+.hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    
+}
+
+.hero::before {
+    content: "";
+    background: url("../image/hero-background.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.hero-content {
+    display: block;   
+}
+
+.hero-title {
+    position: relative;
+    padding: 115px 437px 16px 15px;
+
+    font-family: 'Cormorant', serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.hero-subtitle {
+    position: relative;
+    padding: 0px 490px 24px 15px;
+
+    color:  rgba(255, 255, 255, 1);
+}
+
+.frame-6 {
+    position: relative;
+    padding: 24px 965px 115px 15px;
+}
+
+
+
+/*  Two
+===============================*/
+.two {
+    display: block;
+    margin: 60px 15px 57px ;
+    width: 1110px;
+    height: 555px;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 255px;
+    height: 493px;
+
+    display: block;
+
+    border: 1px solid #0B1919;
+}
+
+.card-img {
+    width: 255px;
+    height: 180px;
+    
+
+    background-color: #0B1919;
+}
+
+.layer-1 {
+    position: relative;
+    margin: 30px 16px 30px 16px;
+
+}
+
+/* .layer-204 {
+    position: relative;
+    top: 16px;
+    right: 218px;
+    bottom: 145px;
+    left: 19px;
+} */
+
+
+.card-title {
+    position: relative;
+    margin: 16px auto 8px 16px;
+
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card-text {
+    position: relative;
+    margin: 0px 16px 16px 16px;
+
+    color: #899D9D;
+}
+
+.btn-card {
+    position: relative;
+    display: inline-block;
+    padding: 10.5px 28.5px;
+
+    left: 16px;
+    bottom: 0px;
+    top: auto;
+
+    color: #BAE249;
+    font-weight: 400;
+    text-decoration: none;
+
+    background-color: #1D2F30;
+    border: 1px solid #BAE249;
+    border-radius: 0px;
+    cursor: pointer;
+
+    
+}
+
+
+.group-205 {
+    display: flex;
+    justify-content: space-between;
+
+    width: 161px;
+    height: 36px;
+
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*  Three
+===============================*/
+.three {
+    display: block;
+    margin: 57px 15px 60px 15px;
+
+    width: 1110px;
+    height: 571px;
+}
+
+.three-title {
+    margin: 0px 770px 30px 0px;
+
+    width: 1110px;
+    height: 48px;
+
+
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.three-card-inner {
+    display: flex;
+    
+}
+
+.card-5 {
+    display: block;
+    width: 825px;
+    height: 493px;
+    margin: 0px 30px 60px 0px; 
+
+    background-color: #0B1919;
+}
+
+.card-5-1 {
+    display: flex;
+    height: 166px;
+    width: 825px;
+}
+
+.img-3-1 {
+    margin: 16px 49px 35px 16px;
+
+    width: 100px;
+    height: 115px;
+}
+
+.img-3-2 {
+    margin: 16px 51px 0px 0px;
+
+    width: 170px;
+    height: 150px;
+}
+
+.img-3-3 {
+    margin: 16px 16px 0px 0px;
+
+    width: 423px;
+    height: 150px;
+}
+
+.card-5-2 {
+    margin: 18px 0px 0px 0px;
+    display: flex;
+    height: 309px;
+    width: 825px;
+}
+
+.img-3-4 {
+    margin: 0px 0px 16px 16px;
+
+    width: 306px;
+    height: 293px;
+}
+
+.img-3-5 {
+    position: relative;
+    margin: 0px 6px 16px 0px;
+    
+    left: -37px;
+    width: 153px;
+    height: 293px;
+}
+
+.img-3-6 {
+    margin: 0px 53px 16px 0px;
+
+    width: 157px;
+    height: 293px;
+}
+
+.img-3-7 {
+    margin: 0px 15px 16px 0px;
+
+    width: 119px;
+    height: 293px;
+}
+
+.group-211 {
+    margin: 0px 15px 60px 0px; 
+    
+    width: 255px;
+    height: 493px;
+
+    background-color: #BAE249;
+
+}
+
+.group-211-title {
+    margin: 16px 39px 8px 16px;
+
+    font-family: 'Cormorant', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1D2F30;
+}
+
+.group-211-text {
+    margin: 0px 16px 75px 16px;
+
+    width: 223px;
+    height: 312px;
+
+
+    color: #506829;
+}
+
+.group-211-read-more {
+    margin: 0px 73px 24px 16px;
+    display: flex;
+    align-items: center;
+    width: 166px;
+    height: 22px;
+
+    color: #0B1919;
+}
+
+.read-more {
+    width: 115px;
+    height: 22px;
+
+
+    margin-right: 8px;
+    font-weight: bold;
+
+    color: black;
+}
+
+.group-211-img {
+    width: 49px;
+    height: 13px;
+
+    
+}
+
+
+
+/*  Four
+===============================*/
+.four {
+    position: relative;
+    width: 100%;
+    height: 463px;
+    
+}
+
+.four::before {
+    content: "";
+    background: url("../image/4_background.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+
+    pointer-events: none;
+}
+
+.four-content {
+    display: block;
+}
+
+.four-title {
+    padding: 60px 817px 16px 15px;
+
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.four-text {
+    margin: 0px 300px 24px 15px;
+
+    color: white;
+}
+
+.group-212-form {
+    width: 100%;
+    max-width: 350px;
+}
+
+.group-212-form-group {
+    margin-bottom: 24px;
+    margin-left: 15px;
+ 
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10.5px 0px 10.5px 15px;
+
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    background-color: white;
+    color: grey;
+    border: 0;
+}
+
+.btn {
+    width: 145px;
+    height: 45px;
+
+
+    font-weight: 700;
+    line-height: 21.79px;
+    
+
+    background-color: #BAE249;
+    border: 0;
+}
+
+
+
+/*  Footer
+===============================*/
+.footer {
+    width: 100%;
+    height: 60px;
+    
+
+    background-color: #0B1919;
+}
+
+.group-199 {
+    margin: 0px auto;
+    padding: 18px 0px;
+    display: flex;
+    width: 186px;
+    height: 24px;
+
+    justify-content: space-between;
+}
+
+.text-year {
+    font-size: 12px;
+    line-height: 16.34px;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+}
