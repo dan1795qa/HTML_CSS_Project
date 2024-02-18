@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Circe-400";
+    src: url("../fonts/Circe-Regular.eot") format('eot'),
+        url("../fonts/Circe-Regular.ttf") format('ttf'),
+        url("../fonts/Circe-Regular.woff") format('woff');
+
+}
+
+@font-face {
+    font-family: "Plumb-500";
+    src: url("../fonts/PlumbMediumC.eot") format('eot'),
+        url("../fonts/PlumbMediumC.ttf") format('ttf'),
+        url("../fonts/PlumbMediumC.woff") format('woff'),
+        url("../fonts/PlumbMediumC.woff2") format('woff2');
+
+}
+
+@font-face {
+    font-family: "Plumb-700";
+    src: url("../fonts/PlumbC-Bold.eot") format('eot'),
+        url("../fonts/PlumbC-Bold.ttf") format('ttf'),
+        url("../fonts/PlumbC-Bold.woff") format('woff'),
+        url("../fonts/PlumbC-Bold.woff2") format('woff2');
+
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+*,
+**,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1115px;
+    margin: auto;
+}
+
+/* Page
+======================================================== */
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.first-screen {
+    width: 100%;
+    height: 800px;
+
+    background: url("../img/bgc.jpg");
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 91px;
+
+    border-bottom: 1px solid white;
+}
+
+.logo {
+
+    margin: 33px 0px 33px 180px;
+}
+
+.main-menu {
+    margin: 35px 315px 37px 312px;
+
+    display: flex;
+    width: 586px;
+    height: 22px;
+
+    justify-content: space-between;
+
+
+
+}
+
+.nav-link a {
+
+    font-family: Circe-400;
+    line-height: 21.6px;
+    color: white;
+    text-decoration: none;
+}
+
+.right-bar {
+    margin: 32px 7.36px 33px 0px;
+
+    width: 172px;
+    height: 25px;
+    display: flex;
+
+}
+
+.right-bar-search {
+    margin: 0px 70px 0px 0px;
+    width: 20px;
+    height: 17.73px;
+}
+
+
+.right-bar-globe {
+    margin: 0px 7.36px 0px 0px;
+    width: 20px;
+    height: 17.73px;
+}
+
+.ln {
+    color: white;
+}
