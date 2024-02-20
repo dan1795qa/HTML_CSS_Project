@@ -134,13 +134,13 @@ h2.title {
 =============================================================== */
 .waiting {
     padding: 85px 0 75px 0;
-    /* Для растягивания тсекции или блока если объекты /текст 
+    /* Для растягивания секции или блока если объекты /текст 
     не помешаются туда */
     min-height: 604px;  
     background-color: #efefef;
 }
 
-.waiting .waiting-header {
+.waiting .waiting-header, .finish .finish-header {
     color: #252525;
     font-family: "Roboto";
     font-size: 30px;
@@ -149,12 +149,16 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting-divider {
+.waiting .waiting-divider, .finish .finish-divider {
     margin: 0 auto;
     margin-top: 18px;
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
+}
+
+.finish .finish-header {
+    color:white
 }
 
 .waiting .waiting-subheader {
@@ -232,4 +236,47 @@ h2.title {
     top: -54px;
     left: -240px;
     z-index: -1;
+}
+
+
+
+/* Finish
+=============================================================== */
+.finish {
+    padding: 86px 0px 79px 0px;
+    min-height: 447px;
+    background: url("../img/second_bg.jpg") center center/cover no-repeat;
+}
+
+.finish .finish-wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish-wrapper .finish-item {
+    width: 204px;
+}
+
+.finish .finish-wrapper .finish-item .finish-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+.finish .finish-wrapper .finish-item .finish-descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+
 }
