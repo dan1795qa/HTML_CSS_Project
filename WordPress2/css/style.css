@@ -280,3 +280,112 @@ h2.title {
     line-height: 20px;
 
 }
+
+
+
+
+/* Gift
+=============================================================== */
+.gift {
+    padding: 85px 0px 88px 0px;
+    min-height: 631px;
+    background: #efefef;
+}
+
+.gift .gift-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift-header {
+    margin-top: 45px;
+
+    color: #252525;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+
+    text-align: center;
+}
+
+.gift .gift-btn {
+    display: block;
+    margin: 0px auto;
+    margin-top: 51px;
+
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+
+    color: white;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Vebinar
+=============================================================== */
+.vebinar {
+    padding: 89px 0px 52.5px 0px;
+    min-height: 514px;
+}
+
+.vebinar .vebinar-img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.vebinar .vebinar-header {
+    margin-top: 36px;
+
+    color: rgba(37, 37, 37, 1);
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+.vebinar .vebinar-date {
+    margin-top: 30px;
+
+    color: rgba(41, 156, 189, 1);
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+.vebinar .vebinar-subheader {
+    margin-top: 24.5px;
+    color: #4a4a4a;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Footer
+=============================================================== */
+.footer {
+    height: 169px;
+    background-color: rgba(26, 26, 26, 1);
+}
+.footer .footer-header {
+    padding-top: 55px;
+    text-align: center;
+    color: rgba(136, 136, 136, 1);
+}
