@@ -151,3 +151,71 @@ nav {
     font-weight: 400;
     text-transform: uppercase;
 }
+
+
+/* Promo
+===============================================================*/
+.reason-advantage {
+    display: block;
+    margin: 18px auto;
+    width: 113px;
+    height: 24px;
+    padding: 4px;
+
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+
+    color: white;
+    background-color: black;
+}
+
+.reason-title {
+    margin-top: 23px;
+    margin-bottom: 0px;
+
+    color: black;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reason-module {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.reason .round {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    margin-right: 25px;
+    height: 116px;
+    width: 116px;
+    align-items: center;
+
+    border-radius: 100%;
+    background-color: #1eacc7;
+}
+
+.reason .reason-descr {
+    width: 371px;
+}
+
+.reason .reason-subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #1eacc7;
+}
+
+.reason .reason-text {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
