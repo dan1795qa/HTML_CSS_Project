@@ -6,7 +6,8 @@
 /* Header
 =============================================================== */
 header {
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 nav {
@@ -155,7 +156,7 @@ nav {
 
 /* Promo
 ===============================================================*/
-.reason-advantage {
+.label {
     display: block;
     margin: 18px auto;
     width: 113px;
@@ -170,7 +171,7 @@ nav {
     background-color: black;
 }
 
-.reason-title {
+.title {
     margin-top: 23px;
     margin-bottom: 0px;
 
