@@ -1,3 +1,11 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+
+=btn-hover
+  &:hover
+    background-image: none
+    background-color: $main-color
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -7,6 +15,7 @@
 header
   position: sticky
   top: 0
+  z-index: 5
 
 nav
   height: 50px
@@ -19,13 +28,13 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu-link
+  &-link
     color: white
     font-size: 15px
     font-weight: 300
     text-decoration: none
 
-  .menu-item
+  &-item
     border-right: 2px dotted black
     padding-right: 45px
 
@@ -38,26 +47,26 @@ nav
 
   /* z-index: 2;
 
-  .subheader-logo
+  &-logo
     display: block
     max-width: 100%
     margin-top: 16px
 
-  .subheader-official
+  &-official
     margin-top: 6px
     color: white
     opacity: 0.5
     font-size: 13px
     font-weight: 400
 
-  .subheader-call
+  &-call
     color: white
     font-size: 12px
     font-weight: 300
     margin-top: 19px
     text-align: right
 
-  .subheader-phone
+  &-phone
     display: block
     margin-top: 8px
     color: white
@@ -68,19 +77,21 @@ nav
     line-height: 12px
     text-decoration: none
 
-  .subheader-btn
+  &-btn
     margin-top: 19px
     width: 172px
     height: 46px
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
     border: none
     border-radius: 4px
-    background-image: linear-gradient(to top, #1eacc7 0%, #1eacc7 100%)
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: white
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    +btn-hover
+    
 
 /* Promo
  *===============================================================
@@ -93,7 +104,7 @@ nav
   /* transform: translateY(-84px);
   /* z-index: 1;
 
-  .promo-header
+  &-header
     color: white
     font-size: 60px
     text-transform: uppercase
@@ -102,7 +113,7 @@ nav
     margin: 0
     text-align: center
 
-  .promo-subheader
+  &-subheader
     color: white
     font-size: 36px
     text-transform: uppercase
@@ -112,7 +123,7 @@ nav
     margin-top: 22px
     text-align: center
 
-  .promo-descr
+  &-descr
     color: white
     font-size: 18px
     font-weight: 400
@@ -120,7 +131,7 @@ nav
     text-align: center
     margin-top: 23px
 
-  .promo-btn
+  &-btn
     display: block
     margin: 118px auto 0
     width: 259px
@@ -128,18 +139,20 @@ nav
     box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
     border: none
     border-radius: 4px
-    background-image: linear-gradient(to top, #1eacc7 0%, #1eacc7 100%)
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     color: white
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
+    +btn-hover
 
 /* Reason
  *===============================================================
 
 .label
-  display: block
+  position: relative
+  display: relative
   margin: 18px auto
   width: 113px
   height: 24px
@@ -150,8 +163,15 @@ nav
   color: white
   background-color: black
   text-transform: uppercase
+  z-index: 2
+  &-white
+    margin: 0 auto
+    background-color: white
+    color: black
+
 
 .title
+  position: relative
   margin-top: 23px
   margin-bottom: 0px
   color: black
@@ -159,12 +179,21 @@ nav
   font-size: 38px
   font-weight: 700
   text-transform: uppercase
+  z-index: 2
+  &-white
+    color: #fff
+
+
 
 .subtitle
-    margin-top: 19px
-    color: #222222
-    font-size: 17px
-    text-align: center
+  position: relative
+  color: #222222
+  font-size: 17px
+  text-align: center
+  z-index: 2
+  &-white
+    color: #fff
+
 
 .reason-module
   display: flex
@@ -249,5 +278,100 @@ nav
             margin: 0 auto
             border-radius: 100%
             cursor: pointer
+            &:before
+              content: ''
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $main-color
+              transition: 0.2
+            &:after
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block
+              height: 14px
+              width: 2px
+              background-color: $main-color
+              transition: 0.2
+            &:hover
+              &:before, &:after
+                background-color: $second-color
 
 
+
+/* Choice
+ *===============================================================
+
+.choice
+  min-height: 899px
+  padding: 54px 0 137.5px 0
+  background: url('../img/mobile_bg.png') center (center / cover) no-repeat
+  &-car
+    position: relative
+    display: block
+    margin: 54px auto 0 auto
+    z-index: 2
+  &-descr
+    text-align: center
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+  .black
+    position: absolute
+    top: 2587px
+    left: 0
+
+    height: 502px
+    width: 100%
+    background-color: #070716
+    z-index: 1
+
+
+/* Require
+  *===============================================================
+
+.require
+  padding: 68px 0 84px 0
+  &-block
+    margin: 33px 0
+    &-nmb
+      margin-bottom: 0px
+  &-title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &-list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-top: 10px
+      &:before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../icons/Require-blue.png') center (center / cover) no-repeat
+  &-descr
+    margin-top: 25px
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+    color: #1ca8c3
+  .warning
+    .require-title
+      color: $second-color
+    .require-list
+      li
+        &::before
+          background: url('../icons/Require-red.png') center (center / cover) no-repeat
