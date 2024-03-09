@@ -406,8 +406,9 @@ footer
   min-height: 154px
   padding: 14px 23px 39px 23px
   a
+    text-decoration: none
     &:hover
-      text-decoration: none
+      color: #076b7d
 .footer
   &-line
     margin: 0 auto
@@ -417,12 +418,17 @@ footer
   &-wrapper
     display: flex
     justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+  &-wrapper > div
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
   &-social
     display: flex
     justify-content: space-between
-    margin: 30px 588px auto 14px
     width: 156px
-    height: 35px
     &-item
       display: flex
       align-items: center
@@ -431,5 +437,41 @@ footer
       height: 35px
       background-color: black
       border-radius: 100%
+  &-link 
+    width: 391px
+    margin: 0 auto
+    &-main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        font-size: 15px
+        font-weight: 300
+        color: #070716
+        text-transform: uppercase
+    &-sublink
+      display: flex
+      justify-content: space-between
+      margin-top: 18px
+      a
+        font-size: 11px
+        font-weight: 300
+        color: #999999
+        text-transform: uppercase
+    &-lang
+      display: block
+      margin: 0 auto
+      margin-top: 19px
+      text-align: center
+      font-size: 11px
+      font-weight: 400
+      color: #1FBAD6
+      text-transform: uppercase
+
+      
+      
+
+
+      
 
     
