@@ -3,7 +3,8 @@
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-html, body {
+*, html, body {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -14,4 +15,5 @@ html, body {
 }
 @import './blocks/promo';
 @import './blocks/header';
-@import './blocks/buttons'
+@import './blocks/buttons';
+@import './blocks/advantages';
