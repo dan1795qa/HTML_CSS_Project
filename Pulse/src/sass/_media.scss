@@ -1,0 +1,126 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .header {
+        &__logo {
+            width: 200px;
+        }
+        &__official {
+            color: #fff;
+            font-size: 10px;
+            span {
+                font-size: 17px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .promo {
+        min-height: 500px;
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+    .advantages {
+        padding: 60px 0 60px 0;
+        &__title {
+            margin-bottom: 60px;
+            font-size: 28px;
+        }
+        &__blocks {
+            min-height: 220px;
+        }
+        &__block {
+            width: 215px;
+            img {
+                margin-bottom: 30px;
+            }
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 520px;
+    }
+    .header {
+        &__logo {
+            width: 140px;
+        }
+        &__official {
+            font-size: 10px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__phone {
+            font-size: 14px;
+        }
+    }
+    .button {
+        width: 130px;
+        font-size: 10px;
+        &_main {
+            margin-top: 50px;
+            width: 250px;
+            font-size: 15px;
+        }
+    }
+    .promo {
+        padding: 15px 0 60px 0;
+        &__header {
+            font-size: 28px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icon {
+            width: 90px;
+            font-size: 14px;
+        }
+    }
+    .advantages {
+        min-height: 373px;
+        padding: 50px 0 50px 0;
+        &__title {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        &__block {
+            width: 150px;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        &__subtitle {
+            font-size: 13.5px;
+            margin-bottom: 12px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .container {
+        max-width: 300px;
+    }
+    
+}
