@@ -1,11 +1,20 @@
 @media (max-width: 1200px) {
     .container {
-        max-width: 900px;
+        max-width: 850px;
+    }
+    .carousel {
+        .tns-item {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 650px;
+            }
+        }
     }
 }
 @media (max-width: 991px) {
     .container {
-        max-width: 720px;
+        max-width: 620px;
     }
     .header {
         &__logo {
@@ -67,10 +76,20 @@
             font-size: 30px;
         }
     }
+    .carousel {
+        .tns-item {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 550px;
+            }
+        }
+    }
+    
 }
 @media (max-width: 767px) {
     .container {
-        max-width: 520px;
+        max-width: 420px;
     }
     .header {
         &__logo {
@@ -159,10 +178,47 @@
             }
         }
     }
+    .carousel {
+        .tns-item {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 450px;
+            }
+        }
+    }
+    .title {
+        &__catalog {
+            font-size: 25px;
+        }
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 40px;
+        }
+        &__tab {
+            font-size: 14px;
+            // margin: 0 auto;
+        }
+        &-item {
+            width: 400px;
+            min-height: 340px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .container {
-        max-width: 300px;
+        max-width:300px;
+    }
+    .carousel {
+        .tns-item {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 150px;
+            }
+        }
     }
     .header {
         display: block;
@@ -262,5 +318,35 @@
             margin-bottom: 18px;
         }
     }
-    
+    .carousel {
+        padding: 41px 0;
+        .prev, .next {
+            left: 1px;
+            img {
+                width: 15px;
+                height: 30px;
+            }
+        }
+        .next {
+            right: 1px;
+            left: auto;
+        }
+    }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 10px;
+        }
+        &__tab {
+            font-size: 9px;
+            // margin: 0 auto;
+        }
+        &__content {
+            margin-top: 20px;
+        }
+        &-item {
+            width: 300px;
+            height: 470px;
+        }
+    }
 }
