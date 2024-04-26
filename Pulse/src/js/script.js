@@ -111,5 +111,22 @@ document.querySelector('.next').addEventListener('click', function(){
       validateForms('#order form');
 
       $('input[name=phone]').mask("+7 (999) 999-99-99");
+    
+      // scroll
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1300) {
+        $(".pageup").fadeIn();
+      } else {
+        $(".pageup").fadeOut();
+      }
+    });
 
+    $("a[href^='#']").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+    });
+
+        
+        
     })(jQuery);
