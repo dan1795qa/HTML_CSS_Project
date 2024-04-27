@@ -127,6 +127,8 @@ document.querySelector('.next').addEventListener('click', function(){
       return false;
     });
 
+    new WOW().init();
+
         
         
     })(jQuery);
