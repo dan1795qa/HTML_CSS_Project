@@ -21,6 +21,31 @@
             }
         }
     }
+    .resume {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 55px;
+        }
+    }
+    .divider {
+        margin: 10px auto 0 auto
+    }
+    .skills {
+        padding-top: 80px;
+        &__items {
+            padding: 0;
+            margin: 45px 0 80px;
+            grid-template: repeat(2, 270px) / repeat(3, 300px);
+            justify-content: space-around;
+        }
+        &__ratings {
+            grid-template: repeat(2, minmax(70px, auto)) / repeat(2, 400px);
+            column-gap: 50px;
+            row-gap: 30px;
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -44,6 +69,35 @@
                 column-gap: 20px;
             }
         }
+    }
+    .resume {
+        padding-top: 60px;
+        &__wrapper {
+            padding: 20px 25px 0 25px;
+            grid-template-columns: repeat(1, 650px);
+            row-gap: 35px;
+        }
+    }
+    .skills {
+        padding-top: 60px;
+        &__items {
+            padding: 0;
+            margin: 35px 0 80px;
+            grid-template: repeat(2, 250px) / repeat(2, 280px);
+            justify-content: center;
+        }
+        &__item {
+            padding: 15px 15px 10px 15px;
+        }
+        &__ratings {
+            grid-template: repeat(2, minmax(70px, auto)) / repeat(2, 300px);
+            column-gap: 70px;
+            row-gap: 30px;
+            justify-content: center;
+            &-line {
+                width: 250px;
+            }
+        }      
     }
 }
 
@@ -78,6 +132,46 @@
             }
         }
     }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding: 20px 20px 0 20px;
+            grid-template-columns: repeat(1, 500px);
+            row-gap: 25px;
+        }
+    }
+    .divider {
+        margin: 5px auto 0 auto
+    }
+    .skills {
+        padding-top: 40px;
+        &__items {
+            margin: 30px 0 55px;
+            grid-template: repeat(2, minmax(230px, auto)) / repeat(2, 230px);
+        }
+        &__item {
+            border: 1px solid black;
+            padding: 10px 10px 5px 10px;
+            &-img {
+                align-items: center;
+                min-height: 65px;
+            }
+            h3 {
+                padding-top: 15px ;
+            }
+            p {
+                padding-top: 5px ;
+            }
+        }
+        &__ratings {
+            grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 450px);
+            row-gap: 45px;
+            justify-content: center;
+            &-line {
+                width: 450px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -91,6 +185,7 @@
         }
         &_fz36 {
             font-size: 24px;
+            line-height: 40px;
         }
     }
     .hamburger {
@@ -115,5 +210,47 @@
         &__skills {
             grid-template-columns: 1fr;
         }
+    }
+    .resume {
+        padding-top: 25px;
+        &__wrapper {
+            padding: 10px 20px 0 20px;
+            grid-template-columns: repeat(1, 270px);
+            row-gap: 15px;
+            justify-content: center;
+        }
+    }
+    .skills {
+        padding-top: 25px;
+        &__items {
+            margin: 30px 0 35px;
+            grid-template: repeat(6, minmax(210px, auto)) / repeat(1, 260px);
+            grid-auto-rows: 210px;
+        }
+        &__item {
+            border: 1px solid black;
+            padding: 10px 5px 5px 10px;
+            &-img {
+                align-items: center;
+                min-height: 25px;
+            }
+            h3 {
+                padding-top: 10px ;
+            }
+            p {
+                padding-top: 1px ;
+            }
+        }
+        &__ratings {
+            grid-template: repeat(2, minmax(70px, auto)) / repeat(1, 250px);
+            row-gap: 35px;
+            justify-content: center;
+            &-line {
+                width: 250px;
+            }
+        }
+    }
+    .divider {
+        margin: 0 auto 0 auto
     }
 }
