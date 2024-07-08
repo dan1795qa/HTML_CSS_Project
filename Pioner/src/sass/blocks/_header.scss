@@ -1,0 +1,38 @@
+.header {
+    &__wrapper {
+        margin: 32px 0px 80px 0px;
+        display: block;
+    }
+    &__first {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contact {
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-size: 20px;
+            font-weight: 600;
+            color: #607CE6;
+        }
+    }
+
+    &__mail {
+        text-align: right;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__phone {
+        text-align: right;
+    }
+    &__line {
+        margin: 32px 0 16px 0;
+        width: 1180px;
+        height: 1px;
+        color: gray;
+    }
+
+}
