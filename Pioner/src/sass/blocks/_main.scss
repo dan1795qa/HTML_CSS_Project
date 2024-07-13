@@ -1,0 +1,14 @@
+.main {
+    &__wrapper {
+        margin: 0 0 80px 0;
+        min-height: 605px;
+        display: grid;
+        grid-template-columns: repeat(2, 580px);
+        grid-template-rows: [row1-s] 145px [row2-s] 440px;
+        .horizontal {
+            grid-column: 1 / 3;
+        }
+    }
+}
+    
+

@@ -20,7 +20,11 @@
 }
 
 .title {
-    
+    font-size: 48px;
+    font-weight: bold;
+    color: #333333
 }
 
 @import './blocks/header';
+@import './blocks/main';
+@import './blocks/about';
