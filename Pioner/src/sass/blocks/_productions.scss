@@ -1,0 +1,43 @@
+.productions {
+    &__title {
+        margin: 0 0 32px 0;
+    }
+    &__wrapper {
+        margin: 0 0 80px 0;
+        min-height: 985px;
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        column-gap: 20px;
+        grid-template-rows: repeat(2, 435px);
+        row-gap: 25px;
+        grid-auto-flow: row;
+    }
+    &__item {
+        background-color: #F5F5F5;
+        padding: 24px 24px;
+    }
+    &__img {
+        min-height: 320px;
+    }
+    &__name {
+        margin-bottom: 12px;
+        font-size: 28px;
+        font-weight: 600;
+        color: #333333;
+    }
+    &__descr {
+        font-size: 20px;
+        font-weight: 400;
+        color: $main-color;
+        margin: auto auto 32px 0px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            &:hover {
+                color: #0b3ced;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+}
