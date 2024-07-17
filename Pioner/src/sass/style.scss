@@ -4,10 +4,12 @@
 @import 'base/mixins';
 
 
-*,
-**,
-*::after,
-*::before {
+body,html {
+    margin: 0px;
+    padding: 0px;
+}
+
+*,**,*::after,*::before {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -31,3 +33,4 @@
 @import './blocks/productions';
 @import './blocks/ofiices';
 @import './blocks/news';
+@import './blocks/footer';
