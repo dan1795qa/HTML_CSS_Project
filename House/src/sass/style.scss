@@ -1,10 +1,15 @@
+
 @import 'base/variables';
 @import 'base/mixins';
 
 
 body,html {
     margin: 0px;
-    padding: 0px 15px;
+    padding: 0px 0px;
+}
+
+* {
+    font-family: 'Raleway-Medium', sans-serif;
 }
 
 *,**,*::after,*::before {
