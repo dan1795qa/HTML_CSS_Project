@@ -17,17 +17,23 @@
 
     }
     &__logo{
+        display: flex;
+        align-items: center;
+        &_icon {
+            margin-right: 8px;
+        }
         &:hover {
-            color: $text-color_3;
+            color: $green;
             cursor: pointer;
         }
     }
     &__item {
-        color: $text-color_1;
+        align-content: center;
+        color: $dark;
         font-size: 20px;
         font-weight: 500;
         &:hover {
-            color: $button-color;
+            color: $green;
             cursor: pointer;
         }
     }
